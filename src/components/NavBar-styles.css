@@ -2,14 +2,16 @@
   display: flex;
   justify-content: baseline;
   align-items: center;
-  padding-top: 2rem;
+  padding: 1rem;
   margin: auto 5%;
 
   h1 {
     font-weight: 800;
+    font-family: "Noto Sans", sans-serif;
     color: var(--primary-color);
 
     span {
+      font-family: "Noto Sans", sans-serif;
       color: var(--secondary-color);
     }
   }
@@ -19,6 +21,7 @@
   display: flex;
   margin-left: 5%;
   position: relative;
+  z-index: 998;
 
   li {
     padding: 0 1rem;
@@ -34,7 +37,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  padding-top: 2.7rem;
+  padding-top: 1.5rem;
   margin: auto 5%;
   display: none;
 }
@@ -50,7 +53,6 @@
     position: fixed;
     top: 0;
     right: -100%;
-    z-index: 0;
     transition: 0.4s;
     background-color: rgba(69, 71, 90, 0.2);
     backdrop-filter: blur(2px);
@@ -71,5 +73,6 @@
 
   .hamburger {
     display: initial;
+    z-index: 999;
   }
 }
