@@ -6,6 +6,7 @@
   --third-color: #cba6f7;
   --base: #24273a;
   --text: #cdd6f4;
+  --dark: #1e1e2e;
 }
 
 * {
@@ -40,8 +41,18 @@ ul {
   border: 1px solid var(--text);
   font-weight: 600;
   cursor: pointer;
-  margin-right: 1rem;
+  margin: 1rem 1rem 0 0;
   border-radius: 3rem;
+  width: 250px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+    background-color: var(--base);
+    border-color: var(--primary-color);
+  }
 }
 
 .btn-secondary {
@@ -53,4 +64,15 @@ ul {
   font-weight: 600;
   cursor: pointer;
   border-radius: 3rem;
+  margin: 1rem 1rem 0 0;
+  width: 250px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: var(--secondary-color);
+    transition: all 0.3s ease-in-out;
+    background-color: var(--base);
+    border-color: var(--secondary-color);
+  }
 }

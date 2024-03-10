@@ -1,4 +1,5 @@
 .home {
+  padding: 5% 15%;
   height: 100%;
   width: 100%;
 
@@ -42,13 +43,13 @@
 
       .content-1 {
         width: 50%;
-        text-align: center;
+        text-align: end;
         align-self: center;
         justify-content: center;
-        padding: 8%;
+        padding: 2rem;
 
         .img-catpuccin {
-          max-width: 80%;
+          max-width: 100%;
           min-width: 300px;
           max-height: 400px;
         }
@@ -59,15 +60,12 @@
         align-self: center;
         justify-content: center;
         text-align: left;
-        padding: 8%;
 
         h1 {
           font-size: 4rem;
           font-weight: 800;
           color: var(--primary-color);
           font-family: "Noto Sans", sans-serif;
-
-          
         }
 
         h2 {
@@ -80,6 +78,7 @@
         .buttons {
           margin-top: 2rem;
           display: flex;
+          flex-wrap: wrap;
         }
       }
     }
@@ -88,13 +87,26 @@
 
 @media screen and (max-width: 1040px) {
   .home {
+    padding-top: 8rem;
     .container {
       .jumbotron {
         .content-1 {
           width: 100%;
+          text-align: center;
+        }
+        .content-1 {
+          padding: 4rem;
         }
         .content-2 {
           width: 100%;
+
+          h1 {
+            font-size: 3rem;
+          }
+
+          h2 {
+            font-size: 1.2rem;
+          }
         }
       }
     }
