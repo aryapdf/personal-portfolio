@@ -21,7 +21,10 @@ body {
 }
 
 h1,
+h2,
+h3,
 h4,
+h5,
 p,
 a {
   text-decoration: none;
@@ -33,12 +36,10 @@ ul {
 }
 
 /*Button style at hero*/
-.btn-primary {
+
+.btn {
   padding: 0.3rem 3rem;
   font-size: 1.2rem;
-  background: var(--primary-color);
-  color: var(--base);
-  border: 1px solid var(--text);
   font-weight: 600;
   cursor: pointer;
   margin: 1rem 1rem 0 0;
@@ -48,31 +49,43 @@ ul {
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    color: var(--primary-color);
     transition: all 0.3s ease-in-out;
+  }
+}
+.btn-primary {
+  background: var(--primary-color);
+  color: var(--base);
+  border: 1px solid var(--text);
+
+  &:hover {
+    color: var(--primary-color);
     background-color: var(--base);
     border-color: var(--primary-color);
   }
 }
 
 .btn-secondary {
-  padding: 0.3rem 3rem;
-  font-size: 1.2rem;
   background: var(--secondary-color);
   color: var(--base);
   border: 1px solid var(--text);
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 3rem;
-  margin: 1rem 1rem 0 0;
-  width: 250px;
-  text-align: center;
-  transition: all 0.3s ease-in-out;
 
   &:hover {
     color: var(--secondary-color);
-    transition: all 0.3s ease-in-out;
+
     background-color: var(--base);
     border-color: var(--secondary-color);
+  }
+}
+
+.btn-cv {
+  background: var(--primary-color);
+  color: var(--base);
+  border: 1px solid var(--text);
+  width: 300px;
+
+  &:hover {
+    color: var(--primary-color);
+    background-color: var(--base);
+    border-color: var(--primary-color);
   }
 }

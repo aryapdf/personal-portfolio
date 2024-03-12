@@ -3,10 +3,17 @@ import "./NavBar-styles.css";
 //Import React Feature
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+
+//Import Feature
+import Clock from "../feature/Clock";
 //Import Icons
 import { FaBars, FaTimes } from "react-icons/fa";
 
+//Import Logo
+import Viyo from "../assets/viyo-catp.png";
+
 const NavBar = () => {
+
   //Hamburger Feature
   const [click, setClick] = useState(false);
   const handleClick = () => {
@@ -30,9 +37,7 @@ const NavBar = () => {
       <div className="navbar">
         <Link to="/">
           <div className="logo">
-            <h1>
-              Arya<span>Pradana</span>
-            </h1>
+            <img src={Viyo} alt="Logo Viyo" className="logo-viyo" />
           </div>
         </Link>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
@@ -49,6 +54,12 @@ const NavBar = () => {
             <Link to="/Contact">Contact</Link>
           </li>
         </ul>
+      </div>
+      <div className="date-time">
+        <h4>Jakarta, Indonesia</h4>
+        <p>
+          <Clock />
+        </p>
       </div>
       <div className="hamburger" onClick={handleClick}>
         {

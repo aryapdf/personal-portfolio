@@ -1,56 +1,26 @@
 .home {
-  padding: 5% 15%;
+  padding: 0 15%;
   height: 100%;
   width: 100%;
 
-  .wallpaper {
-    .mask {
-      width: 100%;
-      height: 92vh;
-      position: relative;
-
-      .catp-img {
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-        background-position: center;
-        object-fit: cover;
-        position: absolute;
-      }
-    }
-
-    .mask::after {
-      content: "";
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-  }
-
   .container {
-    width: 100%;
-    height: 100px;
+    display: flex;
+    flex-flow: row wrap;
+
     .jumbotron {
+      width: 100%;
+      height: 100vh;
       display: flex;
       flex-wrap: wrap;
-      width: 100%;
-      height: 80vh;
-      transform: translate(0%, -111%);
-      top: 50%;
-      left: 50%;
 
       .content-1 {
         width: 50%;
         text-align: end;
         align-self: center;
-        justify-content: center;
-        padding: 2rem;
 
         .img-catpuccin {
           max-width: 100%;
-          min-width: 300px;
+          min-width: 100px;
           max-height: 400px;
         }
       }
@@ -82,6 +52,40 @@
         }
       }
     }
+
+    .skills {
+      width: 100%;
+      height: 50vh;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+
+      h3 {
+        font-size: 3.5rem;
+        color: var(--primary-color);
+        padding-bottom: 3%;
+      }
+
+      .skillset {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 5% 0;
+
+        p {
+          font-size: 4rem;
+          padding: 0;
+          margin: 0;
+        }
+      }
+
+      p {
+        font-size: 1.2rem;
+        font-weight: 400;
+        text-align: center;
+      }
+    }
   }
 }
 
@@ -95,17 +99,34 @@
           text-align: center;
         }
         .content-1 {
-          padding: 4rem;
+          width: 100%;
+          text-align: center;
         }
         .content-2 {
           width: 100%;
 
           h1 {
-            font-size: 3rem;
+            font-size: 2.8rem;
           }
 
           h2 {
             font-size: 1.2rem;
+          }
+        }
+      }
+      .skills {
+        h3 {
+          font-size: 2.5rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+        .skillset {
+          display: grid;
+          grid-template-columns: auto auto auto auto;
+          p {
+            font-size: 2rem;
           }
         }
       }
