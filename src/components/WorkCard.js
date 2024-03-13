@@ -3,8 +3,6 @@ import "./WorkCard-styles.css";
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-
-
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const WorkCard = (props) => {
@@ -15,10 +13,10 @@ const WorkCard = (props) => {
       <div className="pro-details">
         <p>{props.text}</p>
         <div className="pro-btns">
-          <NavLink to={props.view} className="">
+          <NavLink to={props.view} className="" target="_blank">
             <FaExternalLinkAlt size={22} />
           </NavLink>
-          <NavLink to={props.source} className="">
+          <NavLink to={props.source} className="" target="_blank">
             <FaGithub size={25} />
           </NavLink>
         </div>
