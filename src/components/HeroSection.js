@@ -16,7 +16,7 @@ import {
   FaWordpress,
 } from "react-icons/fa";
 
-import { SiVisualstudio, SiPostman } from "react-icons/si";
+import { SiVisualstudio } from "react-icons/si";
 
 const HeroSection = () => {
   return (
@@ -46,9 +46,6 @@ const HeroSection = () => {
           <h3>Skills</h3>
           <p>
             Some of my skills that I learned as a Front-End Website Developer.
-            Starting from creating websites using wordpress in college, to
-            learning websites as a whole such as HTML, CSS, JavaScript to
-            Frameworks in the Front-End section.
           </p>
           <div className="skillset">
             <p>
@@ -56,9 +53,6 @@ const HeroSection = () => {
             </p>
             <p>
               <FaWordpress color="30353a" />
-            </p>
-            <p>
-              <SiPostman color="fab387" />
             </p>
             <p>
               <FaHtml5 color="#ed8796" />

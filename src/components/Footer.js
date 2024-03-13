@@ -99,6 +99,7 @@ const Footer = () => {
                 to="https://www.linkedin.com/in/aryaagnipradana/"
                 target="_blank"
               >
+                {" "}
                 <p>in/aryaagnipradana</p>
               </Link>
             </div>

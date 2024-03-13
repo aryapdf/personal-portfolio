@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import HeroImage from "../components/HeroImage";
 
 import Terminal from "../assets/terminal-catp.png";
+import Work from "../components/Work";
 
 const Project = () => {
   return (
@@ -12,9 +13,10 @@ const Project = () => {
       <NavBar />
       <HeroImage
         heading="PROJECTS"
-        text="This is some of my recent work.."
+        text="Developers who are always ready and eager to work on new projects. So far..."
         image={Terminal}
       />
+      <Work />
       <Footer />
     </div>
   );

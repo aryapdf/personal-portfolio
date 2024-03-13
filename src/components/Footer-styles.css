@@ -115,9 +115,16 @@
     .footer-container {
       .left {
         width: 100%;
+
+        p {
+          font-size: 0.8rem;
+        }
       }
       .right {
         width: 100%;
+        p {
+          font-size: 0.8rem;
+        }
       }
     }
   }

@@ -1,9 +1,13 @@
 import "./CV-styles.css";
+import "./WorkCard-styles.css";
+import WorkCard from "./WorkCard";
+import WorkCardData from "./WorkCardData";
 
 import React from "react";
 
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { FaCommentDots } from "react-icons/fa";
 
 const CV = () => {
   //Make Download CV Function
@@ -35,16 +39,35 @@ const CV = () => {
             <p>Senior High School, 2016 - 2019</p>
           </div>
         </div>
+        <div className="button">
+          <Link className="btn btn-primary" to='./about'>
+            About Me <FaArrowUpRightFromSquare size={16} />
+          </Link>
+        </div>
         <div className="selected">
           <h2>Selected Works</h2>
-
+          <div className="project-container">
+            {WorkCardData.slice(0, 2).map((val, ind) => {
+              return (
+                <WorkCard
+                  key={ind}
+                  imgsrc={val.imgsrc}
+                  title={val.title}
+                  text={val.text}
+                  view={val.view}
+                  source={val.source}
+                />
+              );
+            })}
+          </div>
         </div>
-      </div>
-
-      <div className="button">
-        <Link className="btn btn-cv">
-          About Me <FaArrowUpRightFromSquare size={16} />
-        </Link>
+        <div className="chat">
+          <p>Have a project in mind?</p>
+          <h2>Let's Have a chat!</h2>
+          <Link to="/contact" className="btn btn-secondary">
+            <FaCommentDots size={15} /> Contact Me!
+          </Link>
+        </div>
       </div>
     </section>
   );
