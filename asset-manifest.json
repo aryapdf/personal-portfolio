@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e96e3459.css",
-    "main.js": "/static/js/main.94aa0a0a.js",
+    "main.js": "/static/js/main.2f4eacdc.js",
     "static/media/profile-pic.png": "/static/media/profile-pic.3d3a46b75321e87724b0.png",
     "static/media/pro-wp.png": "/static/media/pro-wp.76eb797847346145e412.png",
     "static/media/project1.png": "/static/media/project1.7f1df46fc45736de96eb.png",
@@ -14,10 +14,10 @@
     "static/media/viyo-catp.png": "/static/media/viyo-catp.9c8b45dc4f54eeea0ac6.png",
     "index.html": "/index.html",
     "main.e96e3459.css.map": "/static/css/main.e96e3459.css.map",
-    "main.94aa0a0a.js.map": "/static/js/main.94aa0a0a.js.map"
+    "main.2f4eacdc.js.map": "/static/js/main.2f4eacdc.js.map"
   },
   "entrypoints": [
     "static/css/main.e96e3459.css",
-    "static/js/main.94aa0a0a.js"
+    "static/js/main.2f4eacdc.js"
   ]
 }
