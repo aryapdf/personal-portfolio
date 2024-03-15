@@ -1,7 +1,7 @@
 import project1 from "../assets/project1.png";
 import project2 from "../assets/project2.png";
 import project0 from "../assets/pro-0.png";
-
+import projectwp from "../assets/pro-wp.png";
 const ProjectCardData = [
   {
     imgsrc: project1,
@@ -16,6 +16,13 @@ const ProjectCardData = [
     text: "A portfolio website with a simple and attractive design, has a formal and casual impression on people who see it. This is a project that I received from my friend who wanted a personal portfolio website for his career.",
     view: "https://aryapdf.github.io/portfolio-website-ichabagus-demo/",
     source: "https://github.com/aryapdf/portfolio-website-ichabagus-demo",
+  },
+  {
+    imgsrc: projectwp,
+    title: "National Seminar Website",
+    text: "National Seminar Faculty of Agriculture 2022 held by Universitas Jambi at Swiss-Belhotel, Kota Jambi. At that time, i was responsible for design and promotion staff, such as creating this wordpress website for registration purposes.",
+    view: "",
+    source: "https://semnasfp2022.unja.ac.id/",
   },
   {
     imgsrc: project0,

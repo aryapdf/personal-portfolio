@@ -6,17 +6,16 @@ import HeroImage from "../components/HeroImage";
 
 import Catpuccin2 from "../assets/catpuccin-2.webp";
 import AboutContent from "../components/AboutContent.js";
+import { AnimatePresence } from "framer-motion";
 
 const About = () => {
   return (
-    <div>
+    <div id="about">
       <NavBar />
-      <HeroImage
-        heading="ABOUT"
-        text=""
-        image={Catpuccin2}
-      />
-      <AboutContent />
+      <AnimatePresence>
+        <HeroImage heading="ABOUT" text="" image={Catpuccin2} />
+        <AboutContent />
+      </AnimatePresence>
       <Footer />
     </div>
   );

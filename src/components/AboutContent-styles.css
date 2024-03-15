@@ -7,9 +7,9 @@
   .profile-work {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    padding-top: 5%;
+  
     h2 {
       font-size: 3rem;
       padding-bottom: 2rem;

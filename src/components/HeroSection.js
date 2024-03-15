@@ -18,11 +18,22 @@ import {
 
 import { SiVisualstudio } from "react-icons/si";
 
+//animation
+import { motion as m } from "framer-motion";
+
 const HeroSection = () => {
   return (
     <section className="home">
       <div className="container">
-        <div className="jumbotron">
+        <m.div
+          className="jumbotron"
+          initial={{
+            opacity: 0,
+            x: -150,
+          }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+        >
           <div className="content-2">
             <h1>Hello! I'm Arya Pradana</h1>
             <h2>
@@ -41,8 +52,16 @@ const HeroSection = () => {
           <div className="content-1">
             <img className="img-catpuccin" src={Catpuccin} alt="Catpuccin" />
           </div>
-        </div>
-        <div className="skills">
+        </m.div>
+        <m.div
+          className="skills"
+          initial={{
+            opacity: 0,
+            y: 150,
+          }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+        >
           <h3>Skills</h3>
           <p>
             Some of my skills that I learned as a Front-End Website Developer.
@@ -74,7 +93,7 @@ const HeroSection = () => {
             </p>
           </div>
           <p>And still learning..</p>
-        </div>
+        </m.div>
       </div>
     </section>
   );

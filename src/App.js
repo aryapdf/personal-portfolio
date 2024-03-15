@@ -5,9 +5,9 @@ import About from "./routes/About";
 import Project from "./routes/Project";
 import Contact from "./routes/Contact";
 import { Route, Routes } from "react-router-dom";
+import ScrollToTop from "./feature/ScrollToTop";
 
 function App() {
-  
   return (
     <>
       <Routes>
@@ -16,6 +16,7 @@ function App() {
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
+      <ScrollToTop smooth/>
     </>
   );
 }

@@ -48,7 +48,7 @@ const CV = () => {
           <h2>Selected Works</h2>
           <p>These are two of my favorite projects. Or at least.. the recent project i have been worked on.</p>
           <div className="project-container">
-            {WorkCardData.slice(0, 2).map((val, ind) => {
+            {WorkCardData.slice(0, 3).map((val, ind) => {
               return (
                 <WorkCard
                   key={ind}

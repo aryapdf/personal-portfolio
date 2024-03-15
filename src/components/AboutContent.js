@@ -1,12 +1,21 @@
 import "./AboutContent-styles.css";
 
 import React from "react";
+import { motion as m } from "framer-motion";
 
 import ProfilePic from "../assets/profile-pic.png";
 
 const AboutContent = () => {
   return (
-    <div className="about-container">
+    <m.div
+      className="about-container"
+      initial={{
+        opacity: 0,
+        y: -50,
+      }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.5, ease: "easeInOut" }}
+    >
       <div className="profile-name">
         <div className="desc">
           <h2>
@@ -48,7 +57,7 @@ const AboutContent = () => {
           </p>
         </div>
       </div>
-    </div>
+    </m.div>
   );
 };
 

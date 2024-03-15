@@ -13,7 +13,6 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import Viyo from "../assets/viyo-catp.png";
 
 const NavBar = () => {
-
   //Hamburger Feature
   const [click, setClick] = useState(false);
   const handleClick = () => {
@@ -42,7 +41,9 @@ const NavBar = () => {
         </Link>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">
+              <a href="home">Home</a>
+            </Link>
           </li>
           <li>
             <Link to="/Project">Project</Link>
