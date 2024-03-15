@@ -16,8 +16,8 @@ const ProjectCardData = [
     imgsrc: project3,
     title: "Simple Movie Cataloge",
     text: "A simple website that show catalogue of Now Playing Movies and Upcoming Movies using API (native). This website implemented some feature such as Notification, Subscrie, and Liked Movies.",
-    view: "https://aryapdf.github.io/portfolio-website-ichabagus-demo/",
-    source: "https://github.com/aryapdf/portfolio-website-ichabagus-demo",
+    view: "https://marvelous-biscuit-c361ee.netlify.app/",
+    source: "https://github.com/aryapdf/movie-catalogue",
   },
   {
     imgsrc: project2,
@@ -30,8 +30,8 @@ const ProjectCardData = [
     imgsrc: projectwp,
     title: "National Seminar Website",
     text: "National Seminar Faculty of Agriculture 2022 held by Universitas Jambi at Swiss-Belhotel, Kota Jambi.",
-    view: "",
-    source: "https://semnasfp2022.unja.ac.id/",
+    view: "https://semnasfp2022.unja.ac.id/",
+    source: "",
   },
   {
     imgsrc: project0,
