@@ -7,6 +7,7 @@ import Catpuccin from "../assets/catpuccin.png";
 import {
   FaCommentDots,
   FaCss3,
+  FaGithub,
   FaHtml5,
   FaJs,
   FaNodeJs,
@@ -57,15 +58,12 @@ const HeroSection = () => {
           className="skills"
           initial={{
             opacity: 0,
-            y: 150,
+            x: 150,
           }}
-          animate={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
         >
-          <h3>Skills</h3>
-          <p>
-            Some of my skills that I learned as a Front-End Website Developer.
-          </p>
+          {" "}
           <div className="skillset">
             <p>
               <SiVisualstudio color="89b4fa" />
@@ -92,7 +90,21 @@ const HeroSection = () => {
               <FaReact color="#89dceb" />
             </p>
           </div>
-          <p>And still learning..</p>
+          <div className="skilldesc">
+            <h3>Diligent, Skillful, and Detail Oriented</h3>
+            <p>
+              As a developer, learning the existing tech-stack and staying
+              up-to-date with the latest technology is a must. Never stop
+              learning.
+            </p>
+            <Link
+              to="https://github.com/aryapdf"
+              className="btn btn-primary"
+              target="_blank"
+            >
+              <FaGithub size={15} /> My Github
+            </Link>
+          </div>
         </m.div>
       </div>
     </section>

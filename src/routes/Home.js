@@ -7,7 +7,7 @@ import { AnimatePresence } from "framer-motion";
 
 const Home = () => {
   return (
-    <div id="/">
+    <div>
       <NavBar />
       <AnimatePresence>
         <HeroSection />

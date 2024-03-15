@@ -41,9 +41,13 @@
 
         h2 {
           padding-top: 2rem;
-          font-size: 1.2rem;
+          font-size: 1.5rem;
           color: var(--text);
           font-weight: 400;
+        }
+
+        a {
+          font-size: 1.2rem;
         }
 
         .buttons {
@@ -56,43 +60,51 @@
 
     .skills {
       width: 100%;
-      height: 100%;
+      height: 75vh;
       display: flex;
-      flex-flow: column wrap;
-      justify-content: center;
       align-items: center;
-      margin-bottom: 10%;
-
-      h3 {
-        font-size: 3.5rem;
-        color: var(--primary-color);
-      }
+      justify-content: center;
+      gap: 10%;
+      padding: 0;
+      margin: 0;
 
       .skillset {
-        width: 100%;
+        width: 50%;
         display: grid;
-        grid-template-columns: repeat(8, 1fr);
+        grid-template-columns: repeat(4, 4fr);
         grid-gap: 1.5rem;
-        padding-top: 2rem;
 
         p {
           font-size: 4rem;
-          padding: 0;
-          margin: 0;
         }
       }
 
-      p {
-        font-size: 1.2rem;
-        font-weight: 400;
-        padding: 3%;
-        text-align: center;
+      .skilldesc {
+        padding: 2rem 0;
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+
+        h3 {
+          font-size: 3rem;
+          color: var(--primary-color);
+        }
+
+        p {
+          font-size: 1.2rem;
+          font-weight: 400;
+          padding: 2rem 0;
+        }
+
+        a {
+          font-size: 1.2rem;
+        }
       }
     }
   }
 }
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 1080px) {
   .home {
     padding-top: 8rem;
     .container {
@@ -116,21 +128,37 @@
           h2 {
             font-size: 1.2rem;
           }
+
+          a {
+            font-size: 1rem;
+          }
         }
       }
       .skills {
-        h3 {
-          font-size: 2.5rem;
+        height: 100%;
+        padding: 3rem 0;
+        flex-wrap: wrap;
+        .skilldesc {
+          width: 100%;
+          h3 {
+            font-size: 2.5rem;
+          }
+
+          p {
+            font-size: 1rem;
+          }
+
+          a {
+            font-size: 1rem;
+          }
         }
 
-        p {
-          font-size: 1rem;
-        }
         .skillset {
+          width: 100%;
           display: grid;
           grid-template-columns: repeat(4, 2fr);
           p {
-            font-size: 2rem;
+            font-size: 3rem;
           }
         }
       }
